@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Face Recognition</title>
+</head>
+<body>
+    <h1>Face Recognition System</h1>
+    <h2>Choose an Option</h2>
+    <h3>Live Webcam Recognition</h3>
+    <form action="/live_recognition" method="get">
+        <label for="image">Upload Target Image:</label>
+        <input type="file" name="image" id="image" required>
+        <br><br>
+        <button type="submit">Start Live Recognition</button>
+    </form>
+    <hr>
+    <h3>Video Processing</h3>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="image">Target Image:</label>
+        <input type="file" name="image" id="image" required>
+        <br>
+        <label for="video">Video File:</label>
+        <input type="file" name="video" id="video" required>
+        <br><br>
+        <button type="submit">Start Video Processing</button>
+    </form>
+</body>
+</html>

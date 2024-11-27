@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Recognition Options</title>
+</head>
+<body>
+    <h1>Choose Recognition Mode</h1>
+    <a href="/live_recognition?target_image={{ target_image_path }}">Live Recognition</a>
+    <form action="/video_recognition" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="target_image" value="{{ target_image_path }}">
+        <label>Upload Video for Recognition:</label>
+        <input type="file" name="video" required>
+        <button type="submit">Start Video Recognition</button>
+    </form>
+</body>
+</html>

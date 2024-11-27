@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Video Recognition Results</title>
+</head>
+<body>
+    <h1>Recognition Results</h1>
+    {% if matched_frames %}
+        <p>Face matched in the following frames:</p>
+        <ul>
+            {% for frame in matched_frames %}
+                <li>Frame {{ frame }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No match found in the video.</p>
+    {% endif %}
+    <a href="/">Go Back</a>
+</body>
+</html>

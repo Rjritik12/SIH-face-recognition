@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Face Recognition Results</title>
+</head>
+<body>
+    <h1>Face Recognition Results</h1>
+    <p>Total Frames Processed: {{ total_frames }}</p>
+    <p>Matched Frames:</p>
+    <ul>
+        {% for frame in matched_frames %}
+        <li>Frame {{ frame }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Go Back</a>
+</body>
+</html>
